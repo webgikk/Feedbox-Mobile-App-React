@@ -17,26 +17,40 @@ const Home = (props) => {
         <title>Feedbox Mobile App</title>
         <meta property="og:title" content="Feedbox Mobile App" />
       </Helmet>
-      <Navbar rootClassName="navbar-root-class-name"></Navbar>
+      <Navbar></Navbar>
       <main className="home-main">
-        <div className="home-hero section-container">
-          <section className="home-max-width max-content-container">
+        <div className="section-container">
+          <div className="home-max-width max-content-container">
             <div className="home-content-container">
-              <h2 className="home-text">
+              <h1 className="home-text Heading1">
                 <span>
-                  Leverage today&apos;s AI Technology to accelerate your career
-                  with our Management Trainee Program
+                  Feed all your news sources and mailboxes right into
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
                 </span>
-                <br></br>
-              </h2>
+                <span className="home-text02">
+                  Feedbox
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+              </h1>
               <div className="home-input-container">
                 <div className="home-container1 input">
-                  <svg viewBox="0 0 1024 1024" className="home-icon">
-                    <path d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"></path>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    className="home-icon"
+                  >
+                    <path d="M804.571 708.571c0 20.571-9.143 60.571-17.714 79.429-12 28-44 46.286-69.714 60.571-33.714 18.286-68 29.143-106.286 29.143-53.143 0-101.143-21.714-149.714-39.429-34.857-12.571-68.571-28-100-47.429-97.143-60-214.286-177.143-274.286-274.286-19.429-31.429-34.857-65.143-47.429-100-17.714-48.571-39.429-96.571-39.429-149.714 0-38.286 10.857-72.571 29.143-106.286 14.286-25.714 32.571-57.714 60.571-69.714 18.857-8.571 58.857-17.714 79.429-17.714 4 0 8 0 12 1.714 12 4 24.571 32 30.286 43.429 18.286 32.571 36 65.714 54.857 97.714 9.143 14.857 26.286 33.143 26.286 50.857 0 34.857-103.429 85.714-103.429 116.571 0 15.429 14.286 35.429 22.286 49.143 57.714 104 129.714 176 233.714 233.714 13.714 8 33.714 22.286 49.143 22.286 30.857 0 81.714-103.429 116.571-103.429 17.714 0 36 17.143 50.857 26.286 32 18.857 65.143 36.571 97.714 54.857 11.429 5.714 39.429 18.286 43.429 30.286 1.714 4 1.714 8 1.714 12z"></path>
                   </svg>
                   <input
                     type="text"
-                    placeholder="Your email id"
+                    placeholder="Your phone number..."
                     className="home-textinput input"
                   />
                 </div>
@@ -52,7 +66,9 @@ const Home = (props) => {
                   >
                     <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
                   </svg>
-                  <span className="home-text03">High quality education </span>
+                  <span className="home-text03">
+                    Easiest way to read news and RSS Feeds.
+                  </span>
                 </div>
                 <div className="home-feature1">
                   <svg
@@ -62,7 +78,7 @@ const Home = (props) => {
                     <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
                   </svg>
                   <span className="home-text04">
-                    Live projects and hand on experience
+                    Works with all mail providers, including Google and Yahoo.
                   </span>
                 </div>
                 <div className="home-feature2">
@@ -73,54 +89,46 @@ const Home = (props) => {
                     <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
                   </svg>
                   <span className="home-text05">
-                    Community driven learning experience 
+                    Over 2000, highly recommended customer reviews.
                   </span>
                 </div>
               </div>
             </div>
-            <img
-              alt="Illustration1839"
-              src="/external/illustration1839-seaa-700h.png"
-              loading="eager"
-              className="home-illustration"
-            />
-          </section>
-          <img
-            alt="Vector1133"
-            src="/external/vector1133-czo4.svg"
-            className="home-vector"
-          />
-          <img
-            alt="Vector1134"
-            src="/external/vector1134-mmd.svg"
-            className="home-vector1"
-          />
+            <div className="home-image-container">
+              <img
+                alt="image"
+                src="/hero%20image-1200w.png"
+                className="home-image"
+              />
+            </div>
+          </div>
         </div>
         <div className="home-section-one section-container">
           <div className="home-max-width1 max-content-container">
-            <h2 className="home-text06">
-              <span className="Heading2">
-                A Swiss Knife for skills up-gradation which will
+            <h2 className="home-text06 Heading2">
+              <span>
+                Read
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
                   }}
                 />
               </span>
-              <span className="home-text08">propel your career</span>
+              <span className="home-text08">everything in one place</span>
+              <span> and</span>
+              <br></br>
+              <span> keep up with important news</span>
             </h2>
             <div className="home-cards-container">
               <FeatureCard image_src="/stars-200h.png"></FeatureCard>
               <FeatureCard
-                text="Gain practical experience by working 2 to 4 hours daily on real projects. Blurring the lines between learning and doing."
                 text1="See how &gt;"
-                heading="Real-World Experience"
+                heading="Follow favorite topics"
                 image_src="/hearth-200h.png"
               ></FeatureCard>
               <FeatureCard
-                text="We've cultivated partnerships with forward-thinking companies, ensuring you're primed for an international career."
                 text1="Learn more &gt;"
-                heading="Global Connections"
+                heading="Read your emails"
                 image_src="/mail-200h.png"
               ></FeatureCard>
               <FeatureCard
@@ -133,15 +141,15 @@ const Home = (props) => {
         </div>
         <div className="section-container">
           <div className="home-max-width2 max-content-container">
-            <div className="home-image-container">
+            <div className="home-image-container1">
               <img
                 alt="image"
                 src="/section-image1-1200w.png"
-                className="home-image"
+                className="home-image1"
               />
             </div>
             <div className="home-content-container1">
-              <h1 className="home-text09 Heading2">
+              <h1 className="home-text12 Heading2">
                 <span>
                   Your favorite articles at your fingertips.
                   <span
@@ -150,9 +158,9 @@ const Home = (props) => {
                     }}
                   />
                 </span>
-                <span className="home-text11">Always.</span>
+                <span className="home-text14">Always.</span>
               </h1>
-              <span className="home-text12 Content-Light">
+              <span className="home-text15 Content-Light">
                 <span>
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
@@ -167,7 +175,7 @@ const Home = (props) => {
         <div className="section-container">
           <div className="home-max-width3 max-content-container">
             <div className="home-content-container2">
-              <h1 className="home-text15 Heading2">
+              <h1 className="home-text18 Heading2">
                 <span>
                   The best content, handpicked for you.
                   <span
@@ -176,9 +184,9 @@ const Home = (props) => {
                     }}
                   />
                 </span>
-                <span className="home-text17">In the morning.</span>
+                <span className="home-text20">In the morning.</span>
               </h1>
-              <span className="home-text18 Content-Light">
+              <span className="home-text21 Content-Light">
                 <span>
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
@@ -188,20 +196,20 @@ const Home = (props) => {
                 <span>Lorem ipsum dolor sit amet.</span>
               </span>
             </div>
-            <div className="home-image-container1">
+            <div className="home-image-container2">
               <img
                 alt="image"
                 src="/section-image2-1200w.png"
-                className="home-image1"
+                className="home-image2"
               />
             </div>
           </div>
         </div>
         <div className="home-section-four section-container">
           <div className="home-max-width4 max-content-container">
-            <h2 className="home-text21">
+            <h2 className="home-text24 Heading2">
               <span>People love Feedbox. </span>
-              <span>So would you.</span>
+              <span className="home-text26">So would you.</span>
             </h2>
           </div>
           <div data-type="slider" className="home-slider">
@@ -226,7 +234,7 @@ const Home = (props) => {
         <div className="section-container">
           <div className="home-max-width5 max-content-container">
             <div className="home-heading-container">
-              <h2 className="home-text24 Heading2">
+              <h2 className="home-text27 Heading2">
                 <span>If you love simplicity, you’ll </span>
                 <span>
                   simply love
@@ -236,23 +244,23 @@ const Home = (props) => {
                     }}
                   />
                 </span>
-                <span className="home-text27">Feedbox.</span>
+                <span className="home-text30">Feedbox.</span>
               </h2>
               <span className="Content-Light">
                 <span>
                   Go to App Store, install Feedbox and start changing your
                   reading habits to
                 </span>
-                <span className="home-text30"></span>
+                <span className="home-text33"></span>
                 <span>day!</span>
               </span>
             </div>
             <div className="home-get-the-app">
-              <img alt="image" src="/frame-1200w.png" className="home-image2" />
+              <img alt="image" src="/frame-1200w.png" className="home-image3" />
               <img
                 alt="image"
                 src="/frame%2034-200h.png"
-                className="home-image3"
+                className="home-image4"
               />
             </div>
             <div className="home-cards-container1">
@@ -275,12 +283,12 @@ const Home = (props) => {
         <div className="home-section-six section-container">
           <div className="home-max-width6 max-content-container">
             <div className="home-content-container3">
-              <h1 className="home-text32 Heading2">
+              <h1 className="home-text35 Heading2">
                 <span>Get started today.</span>
                 <br></br>
-                <span className="home-text34">Try free for 30 days.</span>
+                <span className="home-text37">Try free for 30 days.</span>
               </h1>
-              <span className="home-text35 Content-Light">
+              <span className="home-text38 Content-Light">
                 Go to App Store, install Feedbox and start changing your reading
                 habbits today!
               </span>
@@ -310,7 +318,7 @@ const Home = (props) => {
                   >
                     <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
                   </svg>
-                  <span className="home-text36">
+                  <span className="home-text39">
                     Easiest way to read news and RSS Feeds.
                   </span>
                 </div>
@@ -321,7 +329,7 @@ const Home = (props) => {
                   >
                     <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
                   </svg>
-                  <span className="home-text37">
+                  <span className="home-text40">
                     Works with all mail providers, including Google and Yahoo.
                   </span>
                 </div>
@@ -332,17 +340,17 @@ const Home = (props) => {
                   >
                     <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
                   </svg>
-                  <span className="home-text38">
+                  <span className="home-text41">
                     Over 2000, highly recommended customer reviews.
                   </span>
                 </div>
               </div>
             </div>
-            <div className="home-image-container2">
+            <div className="home-image-container3">
               <img
                 alt="image"
                 src="/group%2032-1200w.png"
-                className="home-image4"
+                className="home-image5"
               />
             </div>
           </div>
